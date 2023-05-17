@@ -1,0 +1,199 @@
+---
+title: "aneurismi"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+
+
+```{r}
+filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 2.csv"
+dat = read.csv(filepath)
+ctable <- table(dat)
+ctable = ctable + 1
+print(ctable)
+fisher.test(ctable, alternative="two.sided")
+```
+```{r}
+filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 B2.csv"
+dat = read.csv(filepath)
+ctable <- table(dat)
+print(ctable)
+fisher.test(ctable, alternative="two.sided")
+```
+```{r}
+filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 14.csv"
+dat = read.csv(filepath)
+ctable <- table(dat)
+print(ctable)
+fisher.test(ctable, alternative="two.sided")
+```
+```{r}
+filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - allelic-combinations.csv"
+dat = read.csv(filepath)
+ctable <- table(dat)
+print(ctable)
+fisher.test(ctable, alternative="two.sided")
+```
+```{r}
+filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 2 - multipli.csv"
+dat = read.csv(filepath)
+ctable <- table(dat)
+print(ctable)
+fisher.test(ctable, alternative="two.sided")
+```
+```{r}
+filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 2 - sah.csv"
+dat = read.csv(filepath)
+ctable <- table(dat)
+print(ctable)
+fisher.test(ctable, alternative="two.sided")
+```
+```{r}
+filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 2 - smoke.csv"
+dat = read.csv(filepath)
+ctable <- table(dat)
+print(ctable)
+fisher.test(ctable, alternative="two.sided")
+```
+```{r}
+filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 B2 - multipli.csv"
+dat = read.csv(filepath)
+ctable <- table(dat)
+print(ctable)
+fisher.test(ctable, alternative="two.sided")
+```
+```{r}
+filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 B2 - sah.csv"
+dat = read.csv(filepath)
+ctable <- table(dat)
+ctable = ctable + 1
+print(ctable)
+fisher.test(ctable, alternative="two.sided")
+```
+```{r}
+filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 B2 - smoke.csv"
+dat = read.csv(filepath)
+ctable <- table(dat)
+print(ctable)
+fisher.test(ctable, alternative="two.sided")
+```
+
+```{r}
+filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 14 - multipli.csv"
+dat = read.csv(filepath)
+ctable <- table(dat)
+ctable = ctable + 2
+print(ctable)
+fisher.test(ctable, alternative="two.sided")
+```
+
+
+```{r}
+filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 14 - sah.csv"
+dat = read.csv(filepath)
+ctable <- table(dat)
+print(ctable)
+fisher.test(ctable)
+```
+```{r}
+filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 14 - smoke.csv"
+dat = read.csv(filepath)
+ctable <- table(dat)
+print(ctable)
+fisher.test(ctable, alternative="two.sided")
+```
+
+
+```{r}
+filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - allelic_combinations - smoke.csv"
+dat = read.csv(filepath)
+ctable <- table(dat)
+ctable = ctable + 2
+print(ctable)
+fisher.test(ctable, alternative="two.sided")
+```
+````{r}
+filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - allelic_combinations - sah.csv"
+dat = read.csv(filepath)
+ctable <- table(dat)
+ctable = ctable + 2
+print(ctable)
+fisher.test(ctable, alternative="two.sided")
+```
+
+
+````{r}
+filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - allelic_combinations - multipli.csv"
+dat = read.csv(filepath)
+ctable <- table(dat)
+ctable = ctable + 2
+print(ctable)
+fisher.test(ctable, alternative="two.sided")
+```
+```{r}
+filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 2 - smoke_sah.csv"
+dat = read.csv(filepath)
+ctable <- table(dat)
+ctable = ctable + 1
+print(ctable)
+fisher.test(ctable, alternative="two.sided")
+```
+
+```{r}
+filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 B2 - smoke_sah.csv"
+dat = read.csv(filepath)
+ctable <- table(dat)
+ctable = ctable + 1
+print(ctable)
+fisher.test(ctable, alternative="two.sided")
+```
+
+```{r}
+filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 14 - smoke_sah.csv"
+dat = read.csv(filepath)
+ctable <- table(dat)
+ctable = ctable + 1
+print(ctable)
+fisher.test(ctable, alternative="two.sided")
+```
+
+```{r}
+filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 2 - nosmoke_sah.csv"
+dat = read.csv(filepath)
+ctable <- table(dat)
+print(ctable)
+fisher.test(ctable, alternative="two.sided")
+```
+```{r}
+filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 B2 - nosmoke_sah.csv"
+dat = read.csv(filepath)
+ctable <- table(dat)
+ctable = ctable + 2
+print(ctable)
+fisher.test(ctable, alternative="two.sided")
+```
+```{r}
+filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 14 - nosmoke_sah.csv"
+dat = read.csv(filepath)
+ctable <- table(dat)
+ctable = ctable + 1
+print(ctable)
+fisher.test(ctable, alternative="two.sided")
+```
+
+```{r}
+filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - allelic_combinations - smoke_sah.csv"
+dat = read.csv(filepath)
+ctable <- table(dat)
+ctable = ctable + 1
+print(ctable)
+fisher.test(ctable, alternative="two.sided")
+```
+```{r}
+filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - allelic_combinations - nosmoke_sah.csv"
+dat = read.csv(filepath)
+ctable <- table(dat)
+print(ctable)
+fisher.test(ctable, alternative="two.sided")
+```
