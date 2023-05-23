@@ -5,15 +5,20 @@ output:
   html_notebook: default
 ---
 
-
+# Single allelic variants frequency in patients group 
+# compared to healthy people
+Reference: Table 1
+CYP2A6*2
 ```{r}
 filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 2.csv"
 dat = read.csv(filepath)
 ctable <- table(dat)
-ctable = ctable + 1
+ctable = ctable + 1 # To avoid p-value = 1
 print(ctable)
 fisher.test(ctable, alternative="two.sided")
 ```
+
+CYP2A6*B2
 ```{r}
 filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 B2.csv"
 dat = read.csv(filepath)
@@ -21,6 +26,8 @@ ctable <- table(dat)
 print(ctable)
 fisher.test(ctable, alternative="two.sided")
 ```
+
+CYP2A6*14
 ```{r}
 filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 14.csv"
 dat = read.csv(filepath)
@@ -28,6 +35,7 @@ ctable <- table(dat)
 print(ctable)
 fisher.test(ctable, alternative="two.sided")
 ```
+
 ```{r}
 filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - allelic-combinations.csv"
 dat = read.csv(filepath)
