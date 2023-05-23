@@ -11,7 +11,7 @@
 
 
 
-<title>aneurismi</title>
+<title>Aneurismi</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -1746,18 +1746,18 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">aneurismi</h1>
+<h1 class="title toc-ignore">Aneurismi</h1>
 
 </div>
 
 
 <!-- rnb-text-begin -->
-<div id="single-allelic-variants-frequency-in-patients-group" class="section level1">
-<h1>Single allelic variants frequency in patients group</h1>
-</div>
-<div id="compared-to-healthy-people" class="section level1">
-<h1>compared to healthy people</h1>
-<p>Reference: Table 1 CYP2A6*2</p>
+<div id="allelic-variants-control-vs-patients" class="section level1">
+<h1>Allelic variants (control vs patients)</h1>
+<p>Single allelic variants frequency in patients group compared to
+healthy people Reference: Table 1</p>
+<div id="cyp2a62" class="section level2">
+<h2>CYP2A6*2</h2>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiAyLmNzdlwiXG5kYXQgPSByZWFkLmNzdihmaWxlcGF0aClcbmN0YWJsZSA8LSB0YWJsZShkYXQpXG5jdGFibGUgPSBjdGFibGUgKyAxICMgVG8gYXZvaWQgcC12YWx1ZSA9IDFcbnByaW50KGN0YWJsZSlcbmBgYCJ9 -->
@@ -1791,7 +1791,9 @@ odds ratio
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>CYP2A6*B2</p>
+</div>
+<div id="cyp2a6b2" class="section level2">
+<h2>CYP2A6*B2</h2>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiBCMi5jc3ZcIlxuZGF0ID0gcmVhZC5jc3YoZmlsZXBhdGgpXG5jdGFibGUgPC0gdGFibGUoZGF0KVxucHJpbnQoY3RhYmxlKVxuYGBgIn0= -->
@@ -1819,7 +1821,9 @@ alternative hypothesis: two.sided</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>CYP2A6*14</p>
+</div>
+<div id="cyp2a614" class="section level2">
+<h2>CYP2A6*14</h2>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiAxNC5jc3ZcIlxuZGF0ID0gcmVhZC5jc3YoZmlsZXBhdGgpXG5jdGFibGUgPC0gdGFibGUoZGF0KVxucHJpbnQoY3RhYmxlKVxuYGBgIn0= -->
@@ -1852,34 +1856,117 @@ odds ratio
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+</div>
+</div>
+<div id="allelic-combinations-control-vs-patients" class="section level1">
+<h1>Allelic combinations (control vs patients)</h1>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIGFsbGVsaWMtY29tYmluYXRpb25zLmNzdlwiXG5kYXQgPSByZWFkLmNzdihmaWxlcGF0aClcbmN0YWJsZSA8LSB0YWJsZShkYXQpXG5wcmludChjdGFibGUpXG5maXNoZXIudGVzdChjdGFibGUsIGFsdGVybmF0aXZlPVwidHdvLnNpZGVkXCIpXG5gYGAifQ== -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIGFsbGVsaWMtY29tYmluYXRpb25zLmNzdlwiXG5kYXQgPSByZWFkLmNzdihmaWxlcGF0aClcbmN0YWJsZSA8LSB0YWJsZShkYXQpXG5wcmludChjdGFibGUpXG5gYGAifQ== -->
 <pre class="r"><code>filepath = &quot;/home/frpnz/Projects/aneurismi/aneurismi_fumo - allelic-combinations.csv&quot;
 dat = read.csv(filepath)
 ctable &lt;- table(dat)
-print(ctable)
-fisher.test(ctable, alternative=&quot;two.sided&quot;)</code></pre>
+print(ctable)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgICAgY29tYmluYXRpb25cbmdyb3VwICAgICBBQS1BQS1DQyBBQS1BQS1DVCBBQS1BRy1DQyBBQS1BRy1DVCBBQS1HRy1DQyBBVC1BQS1DQyBBVC1BRy1DQ1xuICBjb250cm9sICAgICAgIDIzICAgICAgICAxICAgICAgMTE3ICAgICAgICAxICAgICAgICAyICAgICAgICAzICAgICAgICAxXG4gIHBhdGllbnQgICAgICAgNDIgICAgICAgIDAgICAgICAyNjQgICAgICAgMTEgICAgICAgIDEgICAgICAgIDIgICAgICAgMTFcbiAgICAgICAgIGNvbWJpbmF0aW9uXG5ncm91cCAgICAgQVQtQUctQ1RcbiAgY29udHJvbCAgICAgICAgMlxuICBwYXRpZW50ICAgICAgICAwXG4ifQ== -->
+<pre><code>         combination
+group     AA-AA-CC AA-AA-CT AA-AG-CC AA-AG-CT AA-GG-CC AT-AA-CC AT-AG-CC
+  control       23        1      117        1        2        3        1
+  patient       42        0      264       11        1        2       11
+         combination
+group     AT-AG-CT
+  control        2
+  patient        0</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlzaGVyLnRlc3QoY3RhYmxlLCBhbHRlcm5hdGl2ZT1cInR3by5zaWRlZFwiKVxuYGBgIn0= -->
+<pre class="r"><code>fisher.test(ctable, alternative=&quot;two.sided&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5cdEZpc2hlcidzIEV4YWN0IFRlc3QgZm9yIENvdW50IERhdGFcblxuZGF0YTogIGN0YWJsZVxucC12YWx1ZSA9IDAuMDExMjlcbmFsdGVybmF0aXZlIGh5cG90aGVzaXM6IHR3by5zaWRlZFxuIn0= -->
+<pre><code>
+    Fisher&#39;s Exact Test for Count Data
+
+data:  ctable
+p-value = 0.01129
+alternative hypothesis: two.sided</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="clinical-features-in-patients" class="section level1">
+<h1>Clinical features in patients</h1>
+<div id="cyp2a6-2---singolo-vs-multiplo" class="section level2">
+<h2>CYP2A6 2 - singolo vs multiplo</h2>
+<!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiAyIC0gbXVsdGlwbGkuY3N2XCJcbmRhdCA9IHJlYWQuY3N2KGZpbGVwYXRoKVxuY3RhYmxlIDwtIHRhYmxlKGRhdClcbnByaW50KGN0YWJsZSlcbmZpc2hlci50ZXN0KGN0YWJsZSwgYWx0ZXJuYXRpdmU9XCJ0d28uc2lkZWRcIilcbmBgYCJ9 -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiAyIC0gbXVsdGlwbGkuY3N2XCJcbmRhdCA9IHJlYWQuY3N2KGZpbGVwYXRoKVxuY3RhYmxlIDwtIHRhYmxlKGRhdClcbnByaW50KGN0YWJsZSlcbmBgYCJ9 -->
 <pre class="r"><code>filepath = &quot;/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 2 - multipli.csv&quot;
 dat = read.csv(filepath)
 ctable &lt;- table(dat)
-print(ctable)
-fisher.test(ctable, alternative=&quot;two.sided&quot;)</code></pre>
+print(ctable)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgICAgICAgICAgbXVsdGlwbGlcbmFsbGVsaWMudmFyaWFudCAgIDAgICAxXG4gICAgICAgICAgICAgQUEgMjY1ICA1M1xuICAgICAgICAgICAgIEFUICAxMyAgIDBcbiJ9 -->
+<pre><code>               multipli
+allelic.variant   0   1
+             AA 265  53
+             AT  13   0</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlzaGVyLnRlc3QoY3RhYmxlLCBhbHRlcm5hdGl2ZT1cInR3by5zaWRlZFwiKVxuYGBgIn0= -->
+<pre class="r"><code>fisher.test(ctable, alternative=&quot;two.sided&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5cdEZpc2hlcidzIEV4YWN0IFRlc3QgZm9yIENvdW50IERhdGFcblxuZGF0YTogIGN0YWJsZVxucC12YWx1ZSA9IDAuMjM2NFxuYWx0ZXJuYXRpdmUgaHlwb3RoZXNpczogdHJ1ZSBvZGRzIHJhdGlvIGlzIG5vdCBlcXVhbCB0byAxXG45NSBwZXJjZW50IGNvbmZpZGVuY2UgaW50ZXJ2YWw6XG4gMC4wMDAwMDAgMS43MDMwNDdcbnNhbXBsZSBlc3RpbWF0ZXM6XG5vZGRzIHJhdGlvIFxuICAgICAgICAgMCBcbiJ9 -->
+<pre><code>
+    Fisher&#39;s Exact Test for Count Data
+
+data:  ctable
+p-value = 0.2364
+alternative hypothesis: true odds ratio is not equal to 1
+95 percent confidence interval:
+ 0.000000 1.703047
+sample estimates:
+odds ratio 
+         0 </code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="cyp2a6-2---sangunanti-vs-non-sanguinanti" class="section level2">
+<h2>CYP2A6 2 - sangunanti vs non sanguinanti</h2>
+<!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiAyIC0gc2FoLmNzdlwiXG5kYXQgPSByZWFkLmNzdihmaWxlcGF0aClcbmN0YWJsZSA8LSB0YWJsZShkYXQpXG5wcmludChjdGFibGUpXG5maXNoZXIudGVzdChjdGFibGUsIGFsdGVybmF0aXZlPVwidHdvLnNpZGVkXCIpXG5gYGAifQ== -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiAyIC0gc2FoLmNzdlwiXG5kYXQgPSByZWFkLmNzdihmaWxlcGF0aClcbmN0YWJsZSA8LSB0YWJsZShkYXQpXG5wcmludChjdGFibGUpXG5gYGAifQ== -->
 <pre class="r"><code>filepath = &quot;/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 2 - sah.csv&quot;
 dat = read.csv(filepath)
 ctable &lt;- table(dat)
-print(ctable)
-fisher.test(ctable, alternative=&quot;two.sided&quot;)</code></pre>
+print(ctable)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgICAgICAgICAgc2FoXG5hbGxlbGljLnZhcmlhbnQgICAwICAgMVxuICAgICAgICAgICAgIEFBICA3MiAyNDZcbiAgICAgICAgICAgICBBVCAgIDQgICA5XG4ifQ== -->
+<pre><code>               sah
+allelic.variant   0   1
+             AA  72 246
+             AT   4   9</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlzaGVyLnRlc3QoY3RhYmxlLCBhbHRlcm5hdGl2ZT1cInR3by5zaWRlZFwiKVxuYGBgIn0= -->
+<pre class="r"><code>fisher.test(ctable, alternative=&quot;two.sided&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5cdEZpc2hlcidzIEV4YWN0IFRlc3QgZm9yIENvdW50IERhdGFcblxuZGF0YTogIGN0YWJsZVxucC12YWx1ZSA9IDAuNTA1XG5hbHRlcm5hdGl2ZSBoeXBvdGhlc2lzOiB0cnVlIG9kZHMgcmF0aW8gaXMgbm90IGVxdWFsIHRvIDFcbjk1IHBlcmNlbnQgY29uZmlkZW5jZSBpbnRlcnZhbDpcbiAwLjE3NzU5OTMgMy4wMTcxMjY0XG5zYW1wbGUgZXN0aW1hdGVzOlxub2RkcyByYXRpbyBcbiAwLjY1OTQ1MzMgXG4ifQ== -->
+<pre><code>
+    Fisher&#39;s Exact Test for Count Data
+
+data:  ctable
+p-value = 0.505
+alternative hypothesis: true odds ratio is not equal to 1
+95 percent confidence interval:
+ 0.1775993 3.0171264
+sample estimates:
+odds ratio 
+ 0.6594533 </code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="cyp2a6-2---fumo-vs-non-fumo" class="section level2">
+<h2>CYP2A6 2 - fumo vs non fumo</h2>
+<!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiAyIC0gc21va2UuY3N2XCJcbmRhdCA9IHJlYWQuY3N2KGZpbGVwYXRoKVxuY3RhYmxlIDwtIHRhYmxlKGRhdClcbnByaW50KGN0YWJsZSlcbmZpc2hlci50ZXN0KGN0YWJsZSwgYWx0ZXJuYXRpdmU9XCJ0d28uc2lkZWRcIilcbmBgYCJ9 -->
 <pre class="r"><code>filepath = &quot;/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 2 - smoke.csv&quot;
@@ -1889,6 +1976,11 @@ print(ctable)
 fisher.test(ctable, alternative=&quot;two.sided&quot;)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="cyp2a6-b2---singolo-vs-multiplo" class="section level2">
+<h2>CYP2A6 B2 - singolo vs multiplo</h2>
+<!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiBCMiAtIG11bHRpcGxpLmNzdlwiXG5kYXQgPSByZWFkLmNzdihmaWxlcGF0aClcbmN0YWJsZSA8LSB0YWJsZShkYXQpXG5wcmludChjdGFibGUpXG5maXNoZXIudGVzdChjdGFibGUsIGFsdGVybmF0aXZlPVwidHdvLnNpZGVkXCIpXG5gYGAifQ== -->
 <pre class="r"><code>filepath = &quot;/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 B2 - multipli.csv&quot;
@@ -1898,6 +1990,11 @@ print(ctable)
 fisher.test(ctable, alternative=&quot;two.sided&quot;)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="cyp2a6-b2---sangunanti-vs-non-sanguinanti" class="section level2">
+<h2>CYP2A6 B2 - sangunanti vs non sanguinanti</h2>
+<!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiBCMiAtIHNhaC5jc3ZcIlxuZGF0ID0gcmVhZC5jc3YoZmlsZXBhdGgpXG5jdGFibGUgPC0gdGFibGUoZGF0KVxuY3RhYmxlID0gY3RhYmxlICsgMVxucHJpbnQoY3RhYmxlKVxuZmlzaGVyLnRlc3QoY3RhYmxlLCBhbHRlcm5hdGl2ZT1cInR3by5zaWRlZFwiKVxuYGBgIn0= -->
 <pre class="r"><code>filepath = &quot;/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 B2 - sah.csv&quot;
@@ -1908,6 +2005,11 @@ print(ctable)
 fisher.test(ctable, alternative=&quot;two.sided&quot;)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="cyp2a6-b2---fumo-vs-non-fumo" class="section level2">
+<h2>CYP2A6 B2 - fumo vs non fumo</h2>
+<!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiBCMiAtIHNtb2tlLmNzdlwiXG5kYXQgPSByZWFkLmNzdihmaWxlcGF0aClcbmN0YWJsZSA8LSB0YWJsZShkYXQpXG5wcmludChjdGFibGUpXG5maXNoZXIudGVzdChjdGFibGUsIGFsdGVybmF0aXZlPVwidHdvLnNpZGVkXCIpXG5gYGAifQ== -->
 <pre class="r"><code>filepath = &quot;/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 B2 - smoke.csv&quot;
@@ -1918,6 +2020,9 @@ fisher.test(ctable, alternative=&quot;two.sided&quot;)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+</div>
+<div id="cyp2a6-14---singolo-vs-multiplo" class="section level2">
+<h2>CYP2A6 14 - singolo vs multiplo</h2>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiAxNCAtIG11bHRpcGxpLmNzdlwiXG5kYXQgPSByZWFkLmNzdihmaWxlcGF0aClcbmN0YWJsZSA8LSB0YWJsZShkYXQpXG5jdGFibGUgPSBjdGFibGUgKyAyXG5wcmludChjdGFibGUpXG5maXNoZXIudGVzdChjdGFibGUsIGFsdGVybmF0aXZlPVwidHdvLnNpZGVkXCIpXG5gYGAifQ== -->
@@ -1930,6 +2035,9 @@ fisher.test(ctable, alternative=&quot;two.sided&quot;)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+</div>
+<div id="cyp2a6-14---sangunanti-vs-non-sanguinanti" class="section level2">
+<h2>CYP2A6 14 - sangunanti vs non sanguinanti</h2>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiAxNCAtIHNhaC5jc3ZcIlxuZGF0ID0gcmVhZC5jc3YoZmlsZXBhdGgpXG5jdGFibGUgPC0gdGFibGUoZGF0KVxucHJpbnQoY3RhYmxlKVxuZmlzaGVyLnRlc3QoY3RhYmxlKVxuYGBgIn0= -->
@@ -1940,6 +2048,11 @@ print(ctable)
 fisher.test(ctable)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="cyp2a6-14---fumo-vs-non-fumo" class="section level2">
+<h2>CYP2A6 14 - fumo vs non fumo</h2>
+<!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiAxNCAtIHNtb2tlLmNzdlwiXG5kYXQgPSByZWFkLmNzdihmaWxlcGF0aClcbmN0YWJsZSA8LSB0YWJsZShkYXQpXG5wcmludChjdGFibGUpXG5maXNoZXIudGVzdChjdGFibGUsIGFsdGVybmF0aXZlPVwidHdvLnNpZGVkXCIpXG5gYGAifQ== -->
 <pre class="r"><code>filepath = &quot;/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 14 - smoke.csv&quot;
@@ -1950,28 +2063,9 @@ fisher.test(ctable, alternative=&quot;two.sided&quot;)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIGFsbGVsaWNfY29tYmluYXRpb25zIC0gc21va2UuY3N2XCJcbmRhdCA9IHJlYWQuY3N2KGZpbGVwYXRoKVxuY3RhYmxlIDwtIHRhYmxlKGRhdClcbmN0YWJsZSA9IGN0YWJsZSArIDJcbnByaW50KGN0YWJsZSlcbmZpc2hlci50ZXN0KGN0YWJsZSwgYWx0ZXJuYXRpdmU9XCJ0d28uc2lkZWRcIilcbmBgYCJ9 -->
-<pre class="r"><code>filepath = &quot;/home/frpnz/Projects/aneurismi/aneurismi_fumo - allelic_combinations - smoke.csv&quot;
-dat = read.csv(filepath)
-ctable &lt;- table(dat)
-ctable = ctable + 2
-print(ctable)
-fisher.test(ctable, alternative=&quot;two.sided&quot;)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIGFsbGVsaWNfY29tYmluYXRpb25zIC0gc2FoLmNzdlwiXG5kYXQgPSByZWFkLmNzdihmaWxlcGF0aClcbmN0YWJsZSA8LSB0YWJsZShkYXQpXG5jdGFibGUgPSBjdGFibGUgKyAyXG5wcmludChjdGFibGUpXG5maXNoZXIudGVzdChjdGFibGUsIGFsdGVybmF0aXZlPVwidHdvLnNpZGVkXCIpXG5gYGAifQ== -->
-<pre class="r"><code>filepath = &quot;/home/frpnz/Projects/aneurismi/aneurismi_fumo - allelic_combinations - sah.csv&quot;
-dat = read.csv(filepath)
-ctable &lt;- table(dat)
-ctable = ctable + 2
-print(ctable)
-fisher.test(ctable, alternative=&quot;two.sided&quot;)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
+</div>
+<div id="allelic-combinations---multiplo-vs-non-multiplo" class="section level2">
+<h2>Allelic combinations - multiplo vs non multiplo</h2>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIGFsbGVsaWNfY29tYmluYXRpb25zIC0gbXVsdGlwbGkuY3N2XCJcbmRhdCA9IHJlYWQuY3N2KGZpbGVwYXRoKVxuY3RhYmxlIDwtIHRhYmxlKGRhdClcbmN0YWJsZSA9IGN0YWJsZSArIDJcbnByaW50KGN0YWJsZSlcbmZpc2hlci50ZXN0KGN0YWJsZSwgYWx0ZXJuYXRpdmU9XCJ0d28uc2lkZWRcIilcbmBgYCJ9 -->
@@ -1983,54 +2077,14 @@ print(ctable)
 fisher.test(ctable, alternative=&quot;two.sided&quot;)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiAyIC0gc21va2Vfc2FoLmNzdlwiXG5kYXQgPSByZWFkLmNzdihmaWxlcGF0aClcbmN0YWJsZSA8LSB0YWJsZShkYXQpXG5jdGFibGUgPSBjdGFibGUgKyAxXG5wcmludChjdGFibGUpXG5maXNoZXIudGVzdChjdGFibGUsIGFsdGVybmF0aXZlPVwidHdvLnNpZGVkXCIpXG5gYGAifQ== -->
-<pre class="r"><code>filepath = &quot;/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 2 - smoke_sah.csv&quot;
-dat = read.csv(filepath)
-ctable &lt;- table(dat)
-ctable = ctable + 1
-print(ctable)
-fisher.test(ctable, alternative=&quot;two.sided&quot;)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+</div>
+<div id="allelic-combinations---sangunanti-vs-non" class="section level2">
+<h2>Allelic combinations - sangunanti vs non</h2>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiBCMiAtIHNtb2tlX3NhaC5jc3ZcIlxuZGF0ID0gcmVhZC5jc3YoZmlsZXBhdGgpXG5jdGFibGUgPC0gdGFibGUoZGF0KVxuY3RhYmxlID0gY3RhYmxlICsgMVxucHJpbnQoY3RhYmxlKVxuZmlzaGVyLnRlc3QoY3RhYmxlLCBhbHRlcm5hdGl2ZT1cInR3by5zaWRlZFwiKVxuYGBgIn0= -->
-<pre class="r"><code>filepath = &quot;/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 B2 - smoke_sah.csv&quot;
-dat = read.csv(filepath)
-ctable &lt;- table(dat)
-ctable = ctable + 1
-print(ctable)
-fisher.test(ctable, alternative=&quot;two.sided&quot;)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiAxNCAtIHNtb2tlX3NhaC5jc3ZcIlxuZGF0ID0gcmVhZC5jc3YoZmlsZXBhdGgpXG5jdGFibGUgPC0gdGFibGUoZGF0KVxuY3RhYmxlID0gY3RhYmxlICsgMVxucHJpbnQoY3RhYmxlKVxuZmlzaGVyLnRlc3QoY3RhYmxlLCBhbHRlcm5hdGl2ZT1cInR3by5zaWRlZFwiKVxuYGBgIn0= -->
-<pre class="r"><code>filepath = &quot;/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 14 - smoke_sah.csv&quot;
-dat = read.csv(filepath)
-ctable &lt;- table(dat)
-ctable = ctable + 1
-print(ctable)
-fisher.test(ctable, alternative=&quot;two.sided&quot;)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiAyIC0gbm9zbW9rZV9zYWguY3N2XCJcbmRhdCA9IHJlYWQuY3N2KGZpbGVwYXRoKVxuY3RhYmxlIDwtIHRhYmxlKGRhdClcbnByaW50KGN0YWJsZSlcbmZpc2hlci50ZXN0KGN0YWJsZSwgYWx0ZXJuYXRpdmU9XCJ0d28uc2lkZWRcIilcbmBgYCJ9 -->
-<pre class="r"><code>filepath = &quot;/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 2 - nosmoke_sah.csv&quot;
-dat = read.csv(filepath)
-ctable &lt;- table(dat)
-print(ctable)
-fisher.test(ctable, alternative=&quot;two.sided&quot;)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiBCMiAtIG5vc21va2Vfc2FoLmNzdlwiXG5kYXQgPSByZWFkLmNzdihmaWxlcGF0aClcbmN0YWJsZSA8LSB0YWJsZShkYXQpXG5jdGFibGUgPSBjdGFibGUgKyAyXG5wcmludChjdGFibGUpXG5maXNoZXIudGVzdChjdGFibGUsIGFsdGVybmF0aXZlPVwidHdvLnNpZGVkXCIpXG5gYGAifQ== -->
-<pre class="r"><code>filepath = &quot;/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 B2 - nosmoke_sah.csv&quot;
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIGFsbGVsaWNfY29tYmluYXRpb25zIC0gc2FoLmNzdlwiXG5kYXQgPSByZWFkLmNzdihmaWxlcGF0aClcbmN0YWJsZSA8LSB0YWJsZShkYXQpXG5jdGFibGUgPSBjdGFibGUgKyAyXG5wcmludChjdGFibGUpXG5maXNoZXIudGVzdChjdGFibGUsIGFsdGVybmF0aXZlPVwidHdvLnNpZGVkXCIpXG5gYGAifQ== -->
+<pre class="r"><code>filepath = &quot;/home/frpnz/Projects/aneurismi/aneurismi_fumo - allelic_combinations - sah.csv&quot;
 dat = read.csv(filepath)
 ctable &lt;- table(dat)
 ctable = ctable + 2
@@ -2038,40 +2092,92 @@ print(ctable)
 fisher.test(ctable, alternative=&quot;two.sided&quot;)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="allelic-combinations---fumo-vs-non-fumo" class="section level2">
+<h2>Allelic combinations - fumo vs non fumo</h2>
+<!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiAxNCAtIG5vc21va2Vfc2FoLmNzdlwiXG5kYXQgPSByZWFkLmNzdihmaWxlcGF0aClcbmN0YWJsZSA8LSB0YWJsZShkYXQpXG5jdGFibGUgPSBjdGFibGUgKyAxXG5wcmludChjdGFibGUpXG5maXNoZXIudGVzdChjdGFibGUsIGFsdGVybmF0aXZlPVwidHdvLnNpZGVkXCIpXG5gYGAifQ== -->
-<pre class="r"><code>filepath = &quot;/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 14 - nosmoke_sah.csv&quot;
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIGFsbGVsaWNfY29tYmluYXRpb25zIC0gc21va2UuY3N2XCJcbmRhdCA9IHJlYWQuY3N2KGZpbGVwYXRoKVxuY3RhYmxlIDwtIHRhYmxlKGRhdClcbmN0YWJsZSA9IGN0YWJsZSArIDJcbnByaW50KGN0YWJsZSlcbmZpc2hlci50ZXN0KGN0YWJsZSwgYWx0ZXJuYXRpdmU9XCJ0d28uc2lkZWRcIilcbmBgYCJ9 -->
+<pre class="r"><code>filepath = &quot;/home/frpnz/Projects/aneurismi/aneurismi_fumo - allelic_combinations - smoke.csv&quot;
 dat = read.csv(filepath)
 ctable &lt;- table(dat)
-ctable = ctable + 1
+ctable = ctable + 2
 print(ctable)
 fisher.test(ctable, alternative=&quot;two.sided&quot;)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+</div>
+<div id="smoke-sah-vs-no-smoke-sah" class="section level2">
+<h2>Smoke + SAH vs No smoke + SAH</h2>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIGFsbGVsaWNfY29tYmluYXRpb25zIC0gc21va2Vfc2FoLmNzdlwiXG5kYXQgPSByZWFkLmNzdihmaWxlcGF0aClcbmN0YWJsZSA8LSB0YWJsZShkYXQpXG5jdGFibGUgPSBjdGFibGUgKyAxXG5wcmludChjdGFibGUpXG5maXNoZXIudGVzdChjdGFibGUsIGFsdGVybmF0aXZlPVwidHdvLnNpZGVkXCIpXG5gYGAifQ== -->
-<pre class="r"><code>filepath = &quot;/home/frpnz/Projects/aneurismi/aneurismi_fumo - allelic_combinations - smoke_sah.csv&quot;
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIHNhaCAtIHNtb2tlIC0gbm9zbW9rZS5jc3ZcIlxuZGF0ID0gcmVhZC5jc3YoZmlsZXBhdGgpXG5jdGFibGUgPC0gdGFibGUoZGF0KVxucHJpbnQoY3RhYmxlKVxuYGBgIn0= -->
+<pre class="r"><code>filepath = &quot;/home/frpnz/Projects/aneurismi/aneurismi_fumo - sah - smoke - nosmoke.csv&quot;
+dat = read.csv(filepath)
+ctable &lt;- table(dat)
+print(ctable)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgICAgICAgICAgU21va2UuLi5TQUhcbmFsbGVsaWMudmFyaWFudCAgIDAgICAxXG4gICAgICAgICAgICAgQUEgIDI0ICAxMFxuICAgICAgICAgICAgIEFHIDE0OCAgNzJcbiAgICAgICAgICAgICBHRyAgIDEgICAwXG4ifQ== -->
+<pre><code>               Smoke...SAH
+allelic.variant   0   1
+             AA  24  10
+             AG 148  72
+             GG   1   0</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlzaGVyLnRlc3QoY3RhYmxlLCBhbHRlcm5hdGl2ZT1cInR3by5zaWRlZFwiKVxuYGBgIn0= -->
+<pre class="r"><code>fisher.test(ctable, alternative=&quot;two.sided&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5cdEZpc2hlcidzIEV4YWN0IFRlc3QgZm9yIENvdW50IERhdGFcblxuZGF0YTogIGN0YWJsZVxucC12YWx1ZSA9IDAuODk0M1xuYWx0ZXJuYXRpdmUgaHlwb3RoZXNpczogdHdvLnNpZGVkXG4ifQ== -->
+<pre><code>
+    Fisher&#39;s Exact Test for Count Data
+
+data:  ctable
+p-value = 0.8943
+alternative hypothesis: two.sided</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="smoke-nosah-vs-no-smoke-nosah" class="section level2">
+<h2>Smoke + NOSAH vs No smoke + NOSAH</h2>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIG5vIHNhaCAtIHNtb2tlIC0gbm9zbW9rZS5jc3ZcIlxuZGF0ID0gcmVhZC5jc3YoZmlsZXBhdGgpXG5jdGFibGUgPC0gdGFibGUoZGF0KVxuY3RhYmxlID0gY3RhYmxlICsgMVxucHJpbnQoY3RhYmxlKVxuYGBgIn0= -->
+<pre class="r"><code>filepath = &quot;/home/frpnz/Projects/aneurismi/aneurismi_fumo - no sah - smoke - nosmoke.csv&quot;
 dat = read.csv(filepath)
 ctable &lt;- table(dat)
 ctable = ctable + 1
-print(ctable)
-fisher.test(ctable, alternative=&quot;two.sided&quot;)</code></pre>
+print(ctable)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXBhdGggPSBcIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIGFsbGVsaWNfY29tYmluYXRpb25zIC0gbm9zbW9rZV9zYWguY3N2XCJcbmRhdCA9IHJlYWQuY3N2KGZpbGVwYXRoKVxuY3RhYmxlIDwtIHRhYmxlKGRhdClcbnByaW50KGN0YWJsZSlcbmZpc2hlci50ZXN0KGN0YWJsZSwgYWx0ZXJuYXRpdmU9XCJ0d28uc2lkZWRcIilcbmBgYCJ9 -->
-<pre class="r"><code>filepath = &quot;/home/frpnz/Projects/aneurismi/aneurismi_fumo - allelic_combinations - nosmoke_sah.csv&quot;
-dat = read.csv(filepath)
-ctable &lt;- table(dat)
-print(ctable)
-fisher.test(ctable, alternative=&quot;two.sided&quot;)</code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgICAgICAgICAgU21va2UuLi5OTy5TQUhcbmFsbGVsaWMudmFyaWFudCAgMCAgMVxuICAgICAgICAgICAgIEFBIDExICAxXG4gICAgICAgICAgICAgQUcgNjUgIDNcbiJ9 -->
+<pre><code>               Smoke...NO.SAH
+allelic.variant  0  1
+             AA 11  1
+             AG 65  3</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlzaGVyLnRlc3QoY3RhYmxlLCBhbHRlcm5hdGl2ZT1cInR3by5zaWRlZFwiKVxuYGBgIn0= -->
+<pre class="r"><code>fisher.test(ctable, alternative=&quot;two.sided&quot;)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5cdEZpc2hlcidzIEV4YWN0IFRlc3QgZm9yIENvdW50IERhdGFcblxuZGF0YTogIGN0YWJsZVxucC12YWx1ZSA9IDAuNDg1MVxuYWx0ZXJuYXRpdmUgaHlwb3RoZXNpczogdHJ1ZSBvZGRzIHJhdGlvIGlzIG5vdCBlcXVhbCB0byAxXG45NSBwZXJjZW50IGNvbmZpZGVuY2UgaW50ZXJ2YWw6XG4gIDAuMDM3MDg1NTYgMjkuMDQ4NzQ3ODlcbnNhbXBsZSBlc3RpbWF0ZXM6XG5vZGRzIHJhdGlvIFxuIDAuNTEyOTczOSBcbiJ9 -->
+<pre><code>
+    Fisher&#39;s Exact Test for Count Data
+
+data:  ctable
+p-value = 0.4851
+alternative hypothesis: true odds ratio is not equal to 1
+95 percent confidence interval:
+  0.03708556 29.04874789
+sample estimates:
+odds ratio 
+ 0.5129739 </code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 </div>
+</div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiYW5ldXJpc21pIgpvdXRwdXQ6CiAgcGRmX2RvY3VtZW50OiBkZWZhdWx0CiAgaHRtbF9ub3RlYm9vazogZGVmYXVsdAotLS0KCiMgU2luZ2xlIGFsbGVsaWMgdmFyaWFudHMgZnJlcXVlbmN5IGluIHBhdGllbnRzIGdyb3VwIAojIGNvbXBhcmVkIHRvIGhlYWx0aHkgcGVvcGxlClJlZmVyZW5jZTogVGFibGUgMQpDWVAyQTYqMgpgYGB7cn0KZmlsZXBhdGggPSAiL2hvbWUvZnJwbnovUHJvamVjdHMvYW5ldXJpc21pL2FuZXVyaXNtaV9mdW1vIC0gQ1lQMkE2IDIuY3N2IgpkYXQgPSByZWFkLmNzdihmaWxlcGF0aCkKY3RhYmxlIDwtIHRhYmxlKGRhdCkKY3RhYmxlID0gY3RhYmxlICsgMSAjIFRvIGF2b2lkIHAtdmFsdWUgPSAxCnByaW50KGN0YWJsZSkKZmlzaGVyLnRlc3QoY3RhYmxlLCBhbHRlcm5hdGl2ZT0idHdvLnNpZGVkIikKYGBgCgpDWVAyQTYqQjIKYGBge3J9CmZpbGVwYXRoID0gIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiBCMi5jc3YiCmRhdCA9IHJlYWQuY3N2KGZpbGVwYXRoKQpjdGFibGUgPC0gdGFibGUoZGF0KQpwcmludChjdGFibGUpCmZpc2hlci50ZXN0KGN0YWJsZSwgYWx0ZXJuYXRpdmU9InR3by5zaWRlZCIpCmBgYAoKQ1lQMkE2KjE0CmBgYHtyfQpmaWxlcGF0aCA9ICIvaG9tZS9mcnBuei9Qcm9qZWN0cy9hbmV1cmlzbWkvYW5ldXJpc21pX2Z1bW8gLSBDWVAyQTYgMTQuY3N2IgpkYXQgPSByZWFkLmNzdihmaWxlcGF0aCkKY3RhYmxlIDwtIHRhYmxlKGRhdCkKcHJpbnQoY3RhYmxlKQpmaXNoZXIudGVzdChjdGFibGUsIGFsdGVybmF0aXZlPSJ0d28uc2lkZWQiKQpgYGAKCmBgYHtyfQpmaWxlcGF0aCA9ICIvaG9tZS9mcnBuei9Qcm9qZWN0cy9hbmV1cmlzbWkvYW5ldXJpc21pX2Z1bW8gLSBhbGxlbGljLWNvbWJpbmF0aW9ucy5jc3YiCmRhdCA9IHJlYWQuY3N2KGZpbGVwYXRoKQpjdGFibGUgPC0gdGFibGUoZGF0KQpwcmludChjdGFibGUpCmZpc2hlci50ZXN0KGN0YWJsZSwgYWx0ZXJuYXRpdmU9InR3by5zaWRlZCIpCmBgYApgYGB7cn0KZmlsZXBhdGggPSAiL2hvbWUvZnJwbnovUHJvamVjdHMvYW5ldXJpc21pL2FuZXVyaXNtaV9mdW1vIC0gQ1lQMkE2IDIgLSBtdWx0aXBsaS5jc3YiCmRhdCA9IHJlYWQuY3N2KGZpbGVwYXRoKQpjdGFibGUgPC0gdGFibGUoZGF0KQpwcmludChjdGFibGUpCmZpc2hlci50ZXN0KGN0YWJsZSwgYWx0ZXJuYXRpdmU9InR3by5zaWRlZCIpCmBgYApgYGB7cn0KZmlsZXBhdGggPSAiL2hvbWUvZnJwbnovUHJvamVjdHMvYW5ldXJpc21pL2FuZXVyaXNtaV9mdW1vIC0gQ1lQMkE2IDIgLSBzYWguY3N2IgpkYXQgPSByZWFkLmNzdihmaWxlcGF0aCkKY3RhYmxlIDwtIHRhYmxlKGRhdCkKcHJpbnQoY3RhYmxlKQpmaXNoZXIudGVzdChjdGFibGUsIGFsdGVybmF0aXZlPSJ0d28uc2lkZWQiKQpgYGAKYGBge3J9CmZpbGVwYXRoID0gIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiAyIC0gc21va2UuY3N2IgpkYXQgPSByZWFkLmNzdihmaWxlcGF0aCkKY3RhYmxlIDwtIHRhYmxlKGRhdCkKcHJpbnQoY3RhYmxlKQpmaXNoZXIudGVzdChjdGFibGUsIGFsdGVybmF0aXZlPSJ0d28uc2lkZWQiKQpgYGAKYGBge3J9CmZpbGVwYXRoID0gIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiBCMiAtIG11bHRpcGxpLmNzdiIKZGF0ID0gcmVhZC5jc3YoZmlsZXBhdGgpCmN0YWJsZSA8LSB0YWJsZShkYXQpCnByaW50KGN0YWJsZSkKZmlzaGVyLnRlc3QoY3RhYmxlLCBhbHRlcm5hdGl2ZT0idHdvLnNpZGVkIikKYGBgCmBgYHtyfQpmaWxlcGF0aCA9ICIvaG9tZS9mcnBuei9Qcm9qZWN0cy9hbmV1cmlzbWkvYW5ldXJpc21pX2Z1bW8gLSBDWVAyQTYgQjIgLSBzYWguY3N2IgpkYXQgPSByZWFkLmNzdihmaWxlcGF0aCkKY3RhYmxlIDwtIHRhYmxlKGRhdCkKY3RhYmxlID0gY3RhYmxlICsgMQpwcmludChjdGFibGUpCmZpc2hlci50ZXN0KGN0YWJsZSwgYWx0ZXJuYXRpdmU9InR3by5zaWRlZCIpCmBgYApgYGB7cn0KZmlsZXBhdGggPSAiL2hvbWUvZnJwbnovUHJvamVjdHMvYW5ldXJpc21pL2FuZXVyaXNtaV9mdW1vIC0gQ1lQMkE2IEIyIC0gc21va2UuY3N2IgpkYXQgPSByZWFkLmNzdihmaWxlcGF0aCkKY3RhYmxlIDwtIHRhYmxlKGRhdCkKcHJpbnQoY3RhYmxlKQpmaXNoZXIudGVzdChjdGFibGUsIGFsdGVybmF0aXZlPSJ0d28uc2lkZWQiKQpgYGAKCmBgYHtyfQpmaWxlcGF0aCA9ICIvaG9tZS9mcnBuei9Qcm9qZWN0cy9hbmV1cmlzbWkvYW5ldXJpc21pX2Z1bW8gLSBDWVAyQTYgMTQgLSBtdWx0aXBsaS5jc3YiCmRhdCA9IHJlYWQuY3N2KGZpbGVwYXRoKQpjdGFibGUgPC0gdGFibGUoZGF0KQpjdGFibGUgPSBjdGFibGUgKyAyCnByaW50KGN0YWJsZSkKZmlzaGVyLnRlc3QoY3RhYmxlLCBhbHRlcm5hdGl2ZT0idHdvLnNpZGVkIikKYGBgCgoKYGBge3J9CmZpbGVwYXRoID0gIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiAxNCAtIHNhaC5jc3YiCmRhdCA9IHJlYWQuY3N2KGZpbGVwYXRoKQpjdGFibGUgPC0gdGFibGUoZGF0KQpwcmludChjdGFibGUpCmZpc2hlci50ZXN0KGN0YWJsZSkKYGBgCmBgYHtyfQpmaWxlcGF0aCA9ICIvaG9tZS9mcnBuei9Qcm9qZWN0cy9hbmV1cmlzbWkvYW5ldXJpc21pX2Z1bW8gLSBDWVAyQTYgMTQgLSBzbW9rZS5jc3YiCmRhdCA9IHJlYWQuY3N2KGZpbGVwYXRoKQpjdGFibGUgPC0gdGFibGUoZGF0KQpwcmludChjdGFibGUpCmZpc2hlci50ZXN0KGN0YWJsZSwgYWx0ZXJuYXRpdmU9InR3by5zaWRlZCIpCmBgYAoKCmBgYHtyfQpmaWxlcGF0aCA9ICIvaG9tZS9mcnBuei9Qcm9qZWN0cy9hbmV1cmlzbWkvYW5ldXJpc21pX2Z1bW8gLSBhbGxlbGljX2NvbWJpbmF0aW9ucyAtIHNtb2tlLmNzdiIKZGF0ID0gcmVhZC5jc3YoZmlsZXBhdGgpCmN0YWJsZSA8LSB0YWJsZShkYXQpCmN0YWJsZSA9IGN0YWJsZSArIDIKcHJpbnQoY3RhYmxlKQpmaXNoZXIudGVzdChjdGFibGUsIGFsdGVybmF0aXZlPSJ0d28uc2lkZWQiKQpgYGAKYGBgYHtyfQpmaWxlcGF0aCA9ICIvaG9tZS9mcnBuei9Qcm9qZWN0cy9hbmV1cmlzbWkvYW5ldXJpc21pX2Z1bW8gLSBhbGxlbGljX2NvbWJpbmF0aW9ucyAtIHNhaC5jc3YiCmRhdCA9IHJlYWQuY3N2KGZpbGVwYXRoKQpjdGFibGUgPC0gdGFibGUoZGF0KQpjdGFibGUgPSBjdGFibGUgKyAyCnByaW50KGN0YWJsZSkKZmlzaGVyLnRlc3QoY3RhYmxlLCBhbHRlcm5hdGl2ZT0idHdvLnNpZGVkIikKYGBgCgoKYGBgYHtyfQpmaWxlcGF0aCA9ICIvaG9tZS9mcnBuei9Qcm9qZWN0cy9hbmV1cmlzbWkvYW5ldXJpc21pX2Z1bW8gLSBhbGxlbGljX2NvbWJpbmF0aW9ucyAtIG11bHRpcGxpLmNzdiIKZGF0ID0gcmVhZC5jc3YoZmlsZXBhdGgpCmN0YWJsZSA8LSB0YWJsZShkYXQpCmN0YWJsZSA9IGN0YWJsZSArIDIKcHJpbnQoY3RhYmxlKQpmaXNoZXIudGVzdChjdGFibGUsIGFsdGVybmF0aXZlPSJ0d28uc2lkZWQiKQpgYGAKYGBge3J9CmZpbGVwYXRoID0gIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiAyIC0gc21va2Vfc2FoLmNzdiIKZGF0ID0gcmVhZC5jc3YoZmlsZXBhdGgpCmN0YWJsZSA8LSB0YWJsZShkYXQpCmN0YWJsZSA9IGN0YWJsZSArIDEKcHJpbnQoY3RhYmxlKQpmaXNoZXIudGVzdChjdGFibGUsIGFsdGVybmF0aXZlPSJ0d28uc2lkZWQiKQpgYGAKCmBgYHtyfQpmaWxlcGF0aCA9ICIvaG9tZS9mcnBuei9Qcm9qZWN0cy9hbmV1cmlzbWkvYW5ldXJpc21pX2Z1bW8gLSBDWVAyQTYgQjIgLSBzbW9rZV9zYWguY3N2IgpkYXQgPSByZWFkLmNzdihmaWxlcGF0aCkKY3RhYmxlIDwtIHRhYmxlKGRhdCkKY3RhYmxlID0gY3RhYmxlICsgMQpwcmludChjdGFibGUpCmZpc2hlci50ZXN0KGN0YWJsZSwgYWx0ZXJuYXRpdmU9InR3by5zaWRlZCIpCmBgYAoKYGBge3J9CmZpbGVwYXRoID0gIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiAxNCAtIHNtb2tlX3NhaC5jc3YiCmRhdCA9IHJlYWQuY3N2KGZpbGVwYXRoKQpjdGFibGUgPC0gdGFibGUoZGF0KQpjdGFibGUgPSBjdGFibGUgKyAxCnByaW50KGN0YWJsZSkKZmlzaGVyLnRlc3QoY3RhYmxlLCBhbHRlcm5hdGl2ZT0idHdvLnNpZGVkIikKYGBgCgpgYGB7cn0KZmlsZXBhdGggPSAiL2hvbWUvZnJwbnovUHJvamVjdHMvYW5ldXJpc21pL2FuZXVyaXNtaV9mdW1vIC0gQ1lQMkE2IDIgLSBub3Ntb2tlX3NhaC5jc3YiCmRhdCA9IHJlYWQuY3N2KGZpbGVwYXRoKQpjdGFibGUgPC0gdGFibGUoZGF0KQpwcmludChjdGFibGUpCmZpc2hlci50ZXN0KGN0YWJsZSwgYWx0ZXJuYXRpdmU9InR3by5zaWRlZCIpCmBgYApgYGB7cn0KZmlsZXBhdGggPSAiL2hvbWUvZnJwbnovUHJvamVjdHMvYW5ldXJpc21pL2FuZXVyaXNtaV9mdW1vIC0gQ1lQMkE2IEIyIC0gbm9zbW9rZV9zYWguY3N2IgpkYXQgPSByZWFkLmNzdihmaWxlcGF0aCkKY3RhYmxlIDwtIHRhYmxlKGRhdCkKY3RhYmxlID0gY3RhYmxlICsgMgpwcmludChjdGFibGUpCmZpc2hlci50ZXN0KGN0YWJsZSwgYWx0ZXJuYXRpdmU9InR3by5zaWRlZCIpCmBgYApgYGB7cn0KZmlsZXBhdGggPSAiL2hvbWUvZnJwbnovUHJvamVjdHMvYW5ldXJpc21pL2FuZXVyaXNtaV9mdW1vIC0gQ1lQMkE2IDE0IC0gbm9zbW9rZV9zYWguY3N2IgpkYXQgPSByZWFkLmNzdihmaWxlcGF0aCkKY3RhYmxlIDwtIHRhYmxlKGRhdCkKY3RhYmxlID0gY3RhYmxlICsgMQpwcmludChjdGFibGUpCmZpc2hlci50ZXN0KGN0YWJsZSwgYWx0ZXJuYXRpdmU9InR3by5zaWRlZCIpCmBgYAoKYGBge3J9CmZpbGVwYXRoID0gIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIGFsbGVsaWNfY29tYmluYXRpb25zIC0gc21va2Vfc2FoLmNzdiIKZGF0ID0gcmVhZC5jc3YoZmlsZXBhdGgpCmN0YWJsZSA8LSB0YWJsZShkYXQpCmN0YWJsZSA9IGN0YWJsZSArIDEKcHJpbnQoY3RhYmxlKQpmaXNoZXIudGVzdChjdGFibGUsIGFsdGVybmF0aXZlPSJ0d28uc2lkZWQiKQpgYGAKYGBge3J9CmZpbGVwYXRoID0gIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIGFsbGVsaWNfY29tYmluYXRpb25zIC0gbm9zbW9rZV9zYWguY3N2IgpkYXQgPSByZWFkLmNzdihmaWxlcGF0aCkKY3RhYmxlIDwtIHRhYmxlKGRhdCkKcHJpbnQoY3RhYmxlKQpmaXNoZXIudGVzdChjdGFibGUsIGFsdGVybmF0aXZlPSJ0d28uc2lkZWQiKQpgYGA=</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiQW5ldXJpc21pIgpvdXRwdXQ6CiAgcGRmX2RvY3VtZW50OiBkZWZhdWx0CiAgaHRtbF9ub3RlYm9vazogZGVmYXVsdAotLS0KCiMgQWxsZWxpYyB2YXJpYW50cyAoY29udHJvbCB2cyBwYXRpZW50cykKU2luZ2xlIGFsbGVsaWMgdmFyaWFudHMgZnJlcXVlbmN5IGluIHBhdGllbnRzIGdyb3VwIGNvbXBhcmVkIHRvIGhlYWx0aHkgcGVvcGxlClJlZmVyZW5jZTogVGFibGUgMQoKIyMgQ1lQMkE2KjIKYGBge3J9CmZpbGVwYXRoID0gIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiAyLmNzdiIKZGF0ID0gcmVhZC5jc3YoZmlsZXBhdGgpCmN0YWJsZSA8LSB0YWJsZShkYXQpCmN0YWJsZSA9IGN0YWJsZSArIDEgIyBUbyBhdm9pZCBwLXZhbHVlID0gMQpwcmludChjdGFibGUpCmZpc2hlci50ZXN0KGN0YWJsZSwgYWx0ZXJuYXRpdmU9InR3by5zaWRlZCIpCmBgYAojIyBDWVAyQTYqQjIKYGBge3J9CmZpbGVwYXRoID0gIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiBCMi5jc3YiCmRhdCA9IHJlYWQuY3N2KGZpbGVwYXRoKQpjdGFibGUgPC0gdGFibGUoZGF0KQpwcmludChjdGFibGUpCmZpc2hlci50ZXN0KGN0YWJsZSwgYWx0ZXJuYXRpdmU9InR3by5zaWRlZCIpCmBgYAojIyBDWVAyQTYqMTQKYGBge3J9CmZpbGVwYXRoID0gIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiAxNC5jc3YiCmRhdCA9IHJlYWQuY3N2KGZpbGVwYXRoKQpjdGFibGUgPC0gdGFibGUoZGF0KQpwcmludChjdGFibGUpCmZpc2hlci50ZXN0KGN0YWJsZSwgYWx0ZXJuYXRpdmU9InR3by5zaWRlZCIpCmBgYAojIEFsbGVsaWMgY29tYmluYXRpb25zIChjb250cm9sIHZzIHBhdGllbnRzKQpgYGB7cn0KZmlsZXBhdGggPSAiL2hvbWUvZnJwbnovUHJvamVjdHMvYW5ldXJpc21pL2FuZXVyaXNtaV9mdW1vIC0gYWxsZWxpYy1jb21iaW5hdGlvbnMuY3N2IgpkYXQgPSByZWFkLmNzdihmaWxlcGF0aCkKY3RhYmxlIDwtIHRhYmxlKGRhdCkKcHJpbnQoY3RhYmxlKQpmaXNoZXIudGVzdChjdGFibGUsIGFsdGVybmF0aXZlPSJ0d28uc2lkZWQiKQpgYGAKIyBDbGluaWNhbCBmZWF0dXJlcyBpbiBwYXRpZW50cwojIyBDWVAyQTYgMiAtIHNpbmdvbG8gdnMgbXVsdGlwbG8gCmBgYHtyfQpmaWxlcGF0aCA9ICIvaG9tZS9mcnBuei9Qcm9qZWN0cy9hbmV1cmlzbWkvYW5ldXJpc21pX2Z1bW8gLSBDWVAyQTYgMiAtIG11bHRpcGxpLmNzdiIKZGF0ID0gcmVhZC5jc3YoZmlsZXBhdGgpCmN0YWJsZSA8LSB0YWJsZShkYXQpCnByaW50KGN0YWJsZSkKZmlzaGVyLnRlc3QoY3RhYmxlLCBhbHRlcm5hdGl2ZT0idHdvLnNpZGVkIikKYGBgCiMjIENZUDJBNiAyIC0gc2FuZ3VuYW50aSB2cyBub24gc2FuZ3VpbmFudGkKYGBge3J9CmZpbGVwYXRoID0gIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIENZUDJBNiAyIC0gc2FoLmNzdiIKZGF0ID0gcmVhZC5jc3YoZmlsZXBhdGgpCmN0YWJsZSA8LSB0YWJsZShkYXQpCnByaW50KGN0YWJsZSkKZmlzaGVyLnRlc3QoY3RhYmxlLCBhbHRlcm5hdGl2ZT0idHdvLnNpZGVkIikKYGBgCiMjIENZUDJBNiAyIC0gZnVtbyB2cyBub24gZnVtbwpgYGB7cn0KZmlsZXBhdGggPSAiL2hvbWUvZnJwbnovUHJvamVjdHMvYW5ldXJpc21pL2FuZXVyaXNtaV9mdW1vIC0gQ1lQMkE2IDIgLSBzbW9rZS5jc3YiCmRhdCA9IHJlYWQuY3N2KGZpbGVwYXRoKQpjdGFibGUgPC0gdGFibGUoZGF0KQpwcmludChjdGFibGUpCmZpc2hlci50ZXN0KGN0YWJsZSwgYWx0ZXJuYXRpdmU9InR3by5zaWRlZCIpCmBgYAojIyBDWVAyQTYgQjIgLSBzaW5nb2xvIHZzIG11bHRpcGxvCmBgYHtyfQpmaWxlcGF0aCA9ICIvaG9tZS9mcnBuei9Qcm9qZWN0cy9hbmV1cmlzbWkvYW5ldXJpc21pX2Z1bW8gLSBDWVAyQTYgQjIgLSBtdWx0aXBsaS5jc3YiCmRhdCA9IHJlYWQuY3N2KGZpbGVwYXRoKQpjdGFibGUgPC0gdGFibGUoZGF0KQpwcmludChjdGFibGUpCmZpc2hlci50ZXN0KGN0YWJsZSwgYWx0ZXJuYXRpdmU9InR3by5zaWRlZCIpCmBgYAojIyBDWVAyQTYgQjIgLSBzYW5ndW5hbnRpIHZzIG5vbiBzYW5ndWluYW50aQpgYGB7cn0KZmlsZXBhdGggPSAiL2hvbWUvZnJwbnovUHJvamVjdHMvYW5ldXJpc21pL2FuZXVyaXNtaV9mdW1vIC0gQ1lQMkE2IEIyIC0gc2FoLmNzdiIKZGF0ID0gcmVhZC5jc3YoZmlsZXBhdGgpCmN0YWJsZSA8LSB0YWJsZShkYXQpCmN0YWJsZSA9IGN0YWJsZSArIDEKcHJpbnQoY3RhYmxlKQpmaXNoZXIudGVzdChjdGFibGUsIGFsdGVybmF0aXZlPSJ0d28uc2lkZWQiKQpgYGAKIyMgQ1lQMkE2IEIyIC0gZnVtbyB2cyBub24gZnVtbwpgYGB7cn0KZmlsZXBhdGggPSAiL2hvbWUvZnJwbnovUHJvamVjdHMvYW5ldXJpc21pL2FuZXVyaXNtaV9mdW1vIC0gQ1lQMkE2IEIyIC0gc21va2UuY3N2IgpkYXQgPSByZWFkLmNzdihmaWxlcGF0aCkKY3RhYmxlIDwtIHRhYmxlKGRhdCkKcHJpbnQoY3RhYmxlKQpmaXNoZXIudGVzdChjdGFibGUsIGFsdGVybmF0aXZlPSJ0d28uc2lkZWQiKQpgYGAKIyMgQ1lQMkE2IDE0IC0gc2luZ29sbyB2cyBtdWx0aXBsbwpgYGB7cn0KZmlsZXBhdGggPSAiL2hvbWUvZnJwbnovUHJvamVjdHMvYW5ldXJpc21pL2FuZXVyaXNtaV9mdW1vIC0gQ1lQMkE2IDE0IC0gbXVsdGlwbGkuY3N2IgpkYXQgPSByZWFkLmNzdihmaWxlcGF0aCkKY3RhYmxlIDwtIHRhYmxlKGRhdCkKY3RhYmxlID0gY3RhYmxlICsgMgpwcmludChjdGFibGUpCmZpc2hlci50ZXN0KGN0YWJsZSwgYWx0ZXJuYXRpdmU9InR3by5zaWRlZCIpCmBgYAojIyBDWVAyQTYgMTQgLSBzYW5ndW5hbnRpIHZzIG5vbiBzYW5ndWluYW50aQpgYGB7cn0KZmlsZXBhdGggPSAiL2hvbWUvZnJwbnovUHJvamVjdHMvYW5ldXJpc21pL2FuZXVyaXNtaV9mdW1vIC0gQ1lQMkE2IDE0IC0gc2FoLmNzdiIKZGF0ID0gcmVhZC5jc3YoZmlsZXBhdGgpCmN0YWJsZSA8LSB0YWJsZShkYXQpCnByaW50KGN0YWJsZSkKZmlzaGVyLnRlc3QoY3RhYmxlKQpgYGAKIyMgQ1lQMkE2IDE0IC0gZnVtbyB2cyBub24gZnVtbwpgYGB7cn0KZmlsZXBhdGggPSAiL2hvbWUvZnJwbnovUHJvamVjdHMvYW5ldXJpc21pL2FuZXVyaXNtaV9mdW1vIC0gQ1lQMkE2IDE0IC0gc21va2UuY3N2IgpkYXQgPSByZWFkLmNzdihmaWxlcGF0aCkKY3RhYmxlIDwtIHRhYmxlKGRhdCkKcHJpbnQoY3RhYmxlKQpmaXNoZXIudGVzdChjdGFibGUsIGFsdGVybmF0aXZlPSJ0d28uc2lkZWQiKQpgYGAKIyMgQWxsZWxpYyBjb21iaW5hdGlvbnMgLSBtdWx0aXBsbyB2cyBub24gbXVsdGlwbG8KYGBge3J9CmZpbGVwYXRoID0gIi9ob21lL2ZycG56L1Byb2plY3RzL2FuZXVyaXNtaS9hbmV1cmlzbWlfZnVtbyAtIGFsbGVsaWNfY29tYmluYXRpb25zIC0gbXVsdGlwbGkuY3N2IgpkYXQgPSByZWFkLmNzdihmaWxlcGF0aCkKY3RhYmxlIDwtIHRhYmxlKGRhdCkKY3RhYmxlID0gY3RhYmxlICsgMgpwcmludChjdGFibGUpCmZpc2hlci50ZXN0KGN0YWJsZSwgYWx0ZXJuYXRpdmU9InR3by5zaWRlZCIpCmBgYAojIyBBbGxlbGljIGNvbWJpbmF0aW9ucyAtIHNhbmd1bmFudGkgdnMgbm9uCmBgYGB7cn0KZmlsZXBhdGggPSAiL2hvbWUvZnJwbnovUHJvamVjdHMvYW5ldXJpc21pL2FuZXVyaXNtaV9mdW1vIC0gYWxsZWxpY19jb21iaW5hdGlvbnMgLSBzYWguY3N2IgpkYXQgPSByZWFkLmNzdihmaWxlcGF0aCkKY3RhYmxlIDwtIHRhYmxlKGRhdCkKY3RhYmxlID0gY3RhYmxlICsgMgpwcmludChjdGFibGUpCmZpc2hlci50ZXN0KGN0YWJsZSwgYWx0ZXJuYXRpdmU9InR3by5zaWRlZCIpCmBgYAojIyBBbGxlbGljIGNvbWJpbmF0aW9ucyAtIGZ1bW8gdnMgbm9uIGZ1bW8KYGBgYHtyfQpmaWxlcGF0aCA9ICIvaG9tZS9mcnBuei9Qcm9qZWN0cy9hbmV1cmlzbWkvYW5ldXJpc21pX2Z1bW8gLSBhbGxlbGljX2NvbWJpbmF0aW9ucyAtIHNtb2tlLmNzdiIKZGF0ID0gcmVhZC5jc3YoZmlsZXBhdGgpCmN0YWJsZSA8LSB0YWJsZShkYXQpCmN0YWJsZSA9IGN0YWJsZSArIDIKcHJpbnQoY3RhYmxlKQpmaXNoZXIudGVzdChjdGFibGUsIGFsdGVybmF0aXZlPSJ0d28uc2lkZWQiKQpgYGAKCgojIyBTbW9rZSArIFNBSCB2cyBObyBzbW9rZSArIFNBSApgYGB7cn0KZmlsZXBhdGggPSAiL2hvbWUvZnJwbnovUHJvamVjdHMvYW5ldXJpc21pL2FuZXVyaXNtaV9mdW1vIC0gc2FoIC0gc21va2UgLSBub3Ntb2tlLmNzdiIKZGF0ID0gcmVhZC5jc3YoZmlsZXBhdGgpCmN0YWJsZSA8LSB0YWJsZShkYXQpCnByaW50KGN0YWJsZSkKZmlzaGVyLnRlc3QoY3RhYmxlLCBhbHRlcm5hdGl2ZT0idHdvLnNpZGVkIikKYGBgCiMjIFNtb2tlICsgTk9TQUggdnMgTm8gc21va2UgKyBOT1NBSApgYGB7cn0KZmlsZXBhdGggPSAiL2hvbWUvZnJwbnovUHJvamVjdHMvYW5ldXJpc21pL2FuZXVyaXNtaV9mdW1vIC0gbm8gc2FoIC0gc21va2UgLSBub3Ntb2tlLmNzdiIKZGF0ID0gcmVhZC5jc3YoZmlsZXBhdGgpCmN0YWJsZSA8LSB0YWJsZShkYXQpCmN0YWJsZSA9IGN0YWJsZSArIDEKcHJpbnQoY3RhYmxlKQpmaXNoZXIudGVzdChjdGFibGUsIGFsdGVybmF0aXZlPSJ0d28uc2lkZWQiKQpgYGA=</div>
 
 
 

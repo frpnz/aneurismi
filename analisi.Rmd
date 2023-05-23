@@ -1,14 +1,15 @@
 ---
-title: "aneurismi"
+title: "Aneurismi"
 output:
   pdf_document: default
   html_notebook: default
 ---
 
-# Single allelic variants frequency in patients group 
-# compared to healthy people
+# Allelic variants (control vs patients)
+Single allelic variants frequency in patients group compared to healthy people
 Reference: Table 1
-CYP2A6*2
+
+## CYP2A6*2
 ```{r}
 filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 2.csv"
 dat = read.csv(filepath)
@@ -17,8 +18,7 @@ ctable = ctable + 1 # To avoid p-value = 1
 print(ctable)
 fisher.test(ctable, alternative="two.sided")
 ```
-
-CYP2A6*B2
+## CYP2A6*B2
 ```{r}
 filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 B2.csv"
 dat = read.csv(filepath)
@@ -26,8 +26,7 @@ ctable <- table(dat)
 print(ctable)
 fisher.test(ctable, alternative="two.sided")
 ```
-
-CYP2A6*14
+## CYP2A6*14
 ```{r}
 filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 14.csv"
 dat = read.csv(filepath)
@@ -35,7 +34,7 @@ ctable <- table(dat)
 print(ctable)
 fisher.test(ctable, alternative="two.sided")
 ```
-
+# Allelic combinations (control vs patients)
 ```{r}
 filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - allelic-combinations.csv"
 dat = read.csv(filepath)
@@ -43,6 +42,8 @@ ctable <- table(dat)
 print(ctable)
 fisher.test(ctable, alternative="two.sided")
 ```
+# Clinical features in patients
+## CYP2A6 2 - singolo vs multiplo 
 ```{r}
 filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 2 - multipli.csv"
 dat = read.csv(filepath)
@@ -50,6 +51,7 @@ ctable <- table(dat)
 print(ctable)
 fisher.test(ctable, alternative="two.sided")
 ```
+## CYP2A6 2 - sangunanti vs non sanguinanti
 ```{r}
 filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 2 - sah.csv"
 dat = read.csv(filepath)
@@ -57,6 +59,7 @@ ctable <- table(dat)
 print(ctable)
 fisher.test(ctable, alternative="two.sided")
 ```
+## CYP2A6 2 - fumo vs non fumo
 ```{r}
 filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 2 - smoke.csv"
 dat = read.csv(filepath)
@@ -64,6 +67,7 @@ ctable <- table(dat)
 print(ctable)
 fisher.test(ctable, alternative="two.sided")
 ```
+## CYP2A6 B2 - singolo vs multiplo
 ```{r}
 filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 B2 - multipli.csv"
 dat = read.csv(filepath)
@@ -71,6 +75,7 @@ ctable <- table(dat)
 print(ctable)
 fisher.test(ctable, alternative="two.sided")
 ```
+## CYP2A6 B2 - sangunanti vs non sanguinanti
 ```{r}
 filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 B2 - sah.csv"
 dat = read.csv(filepath)
@@ -79,6 +84,7 @@ ctable = ctable + 1
 print(ctable)
 fisher.test(ctable, alternative="two.sided")
 ```
+## CYP2A6 B2 - fumo vs non fumo
 ```{r}
 filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 B2 - smoke.csv"
 dat = read.csv(filepath)
@@ -86,7 +92,7 @@ ctable <- table(dat)
 print(ctable)
 fisher.test(ctable, alternative="two.sided")
 ```
-
+## CYP2A6 14 - singolo vs multiplo
 ```{r}
 filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 14 - multipli.csv"
 dat = read.csv(filepath)
@@ -95,8 +101,7 @@ ctable = ctable + 2
 print(ctable)
 fisher.test(ctable, alternative="two.sided")
 ```
-
-
+## CYP2A6 14 - sangunanti vs non sanguinanti
 ```{r}
 filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 14 - sah.csv"
 dat = read.csv(filepath)
@@ -104,6 +109,7 @@ ctable <- table(dat)
 print(ctable)
 fisher.test(ctable)
 ```
+## CYP2A6 14 - fumo vs non fumo
 ```{r}
 filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 14 - smoke.csv"
 dat = read.csv(filepath)
@@ -111,16 +117,16 @@ ctable <- table(dat)
 print(ctable)
 fisher.test(ctable, alternative="two.sided")
 ```
-
-
+## Allelic combinations - multiplo vs non multiplo
 ```{r}
-filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - allelic_combinations - smoke.csv"
+filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - allelic_combinations - multipli.csv"
 dat = read.csv(filepath)
 ctable <- table(dat)
 ctable = ctable + 2
 print(ctable)
 fisher.test(ctable, alternative="two.sided")
 ```
+## Allelic combinations - sangunanti vs non
 ````{r}
 filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - allelic_combinations - sah.csv"
 dat = read.csv(filepath)
@@ -129,79 +135,31 @@ ctable = ctable + 2
 print(ctable)
 fisher.test(ctable, alternative="two.sided")
 ```
-
-
+## Allelic combinations - fumo vs non fumo
 ````{r}
-filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - allelic_combinations - multipli.csv"
+filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - allelic_combinations - smoke.csv"
 dat = read.csv(filepath)
 ctable <- table(dat)
 ctable = ctable + 2
 print(ctable)
 fisher.test(ctable, alternative="two.sided")
 ```
-```{r}
-filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 2 - smoke_sah.csv"
-dat = read.csv(filepath)
-ctable <- table(dat)
-ctable = ctable + 1
-print(ctable)
-fisher.test(ctable, alternative="two.sided")
-```
 
-```{r}
-filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 B2 - smoke_sah.csv"
-dat = read.csv(filepath)
-ctable <- table(dat)
-ctable = ctable + 1
-print(ctable)
-fisher.test(ctable, alternative="two.sided")
-```
 
+## Smoke + SAH vs No smoke + SAH
 ```{r}
-filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 14 - smoke_sah.csv"
+filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - sah - smoke - nosmoke.csv"
+dat = read.csv(filepath)
+ctable <- table(dat)
+print(ctable)
+fisher.test(ctable, alternative="two.sided")
+```
+## Smoke + NOSAH vs No smoke + NOSAH
+```{r}
+filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - no sah - smoke - nosmoke.csv"
 dat = read.csv(filepath)
 ctable <- table(dat)
 ctable = ctable + 1
-print(ctable)
-fisher.test(ctable, alternative="two.sided")
-```
-
-```{r}
-filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 2 - nosmoke_sah.csv"
-dat = read.csv(filepath)
-ctable <- table(dat)
-print(ctable)
-fisher.test(ctable, alternative="two.sided")
-```
-```{r}
-filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 B2 - nosmoke_sah.csv"
-dat = read.csv(filepath)
-ctable <- table(dat)
-ctable = ctable + 2
-print(ctable)
-fisher.test(ctable, alternative="two.sided")
-```
-```{r}
-filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - CYP2A6 14 - nosmoke_sah.csv"
-dat = read.csv(filepath)
-ctable <- table(dat)
-ctable = ctable + 1
-print(ctable)
-fisher.test(ctable, alternative="two.sided")
-```
-
-```{r}
-filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - allelic_combinations - smoke_sah.csv"
-dat = read.csv(filepath)
-ctable <- table(dat)
-ctable = ctable + 1
-print(ctable)
-fisher.test(ctable, alternative="two.sided")
-```
-```{r}
-filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - allelic_combinations - nosmoke_sah.csv"
-dat = read.csv(filepath)
-ctable <- table(dat)
 print(ctable)
 fisher.test(ctable, alternative="two.sided")
 ```
