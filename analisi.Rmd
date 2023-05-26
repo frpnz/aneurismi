@@ -5,8 +5,7 @@ output:
   html_notebook: default
 ---
 
-# Allelic variants (control vs patients)
-Single allelic variants frequency in patients group compared to healthy people
+# Single allelic variants frequency in patients group compared to healthy people
 Reference: Table 1
 
 ## CYP2A6*2
@@ -34,7 +33,7 @@ ctable <- table(dat)
 print(ctable)
 fisher.test(ctable, alternative="two.sided")
 ```
-# Allelic combinations (control vs patients)
+# Allelic combinations frequency in patients group compared to healthy people
 ```{r}
 filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - allelic-combinations.csv"
 dat = read.csv(filepath)
@@ -145,21 +144,87 @@ print(ctable)
 fisher.test(ctable, alternative="two.sided")
 ```
 
+#  Single polymorphisms and combinations correlation with IA rupture and smoking habits
+Reference Table 4
+## Smoke + SAH vs No smoke + SAH
+## CYP2A6 2
+```{r}
+filepath = "aneurismi_fumo - sah - smoke - nosmoke - CYP2A6 2.csv"
+dat = read.csv(filepath)
+ctable <- table(dat)
+print(ctable)
+fisher.test(ctable, alternative="two.sided")
+```
+## Smoke + SAH vs No smoke + SAH
+## CYP2A6 B2
+```{r}
+filepath = "aneurismi_fumo - sah - smoke - nosmoke - CYP2A6 B2.csv"
+dat = read.csv(filepath)
+ctable <- table(dat)
+print(ctable)
+fisher.test(ctable, alternative="two.sided")
+```
 
 ## Smoke + SAH vs No smoke + SAH
+## CYP2A6 14
 ```{r}
-filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - sah - smoke - nosmoke.csv"
+filepath = "aneurismi_fumo - sah - smoke - nosmoke - CYP2A6 14.csv"
 dat = read.csv(filepath)
 ctable <- table(dat)
 print(ctable)
 fisher.test(ctable, alternative="two.sided")
 ```
 ## Smoke + NOSAH vs No smoke + NOSAH
+## CYP2A6 2
 ```{r}
-filepath = "/home/frpnz/Projects/aneurismi/aneurismi_fumo - no sah - smoke - nosmoke.csv"
+filepath = "aneurismi_fumo - no sah - smoke - nosmoke - CYP2A6 2.csv"
 dat = read.csv(filepath)
 ctable <- table(dat)
 ctable = ctable + 1
 print(ctable)
 fisher.test(ctable, alternative="two.sided")
+```
+## Smoke + NOSAH vs No smoke + NOSAH
+## CYP2A6 B2
+```{r}
+filepath = "aneurismi_fumo - no sah - smoke - nosmoke - CYP2A6 B2.csv"
+dat = read.csv(filepath)
+ctable <- table(dat)
+ctable = ctable + 1
+print(ctable)
+fisher.test(ctable, alternative="two.sided")
+```
+## Smoke + NOSAH vs No smoke + NOSAH
+## CYP2A6 14
+Fisher's exact test is appropriate only for tables, or parts of tables, with two rows and two columns that contain values (for example, a nested section of a larger table may be valid for this test). Rows and columns with no respondent data are ignored by the test, so a table with two rows and two columns may not be valid if, for example, one of the rows has no data. Conversely, a table with three rows and two columns may be suitable for the test if one of the rows has no data.
+You can use this test on its own or in addition to the chi-square test. If you request the chi-square test and Fisher's exact test on the same table, a single chi-square column is used to display the results for both tests. If you request Fisher's exact test on a table that does not meet the requirements, it is not carried out.
+The value returned by Fisher's exact test is the two-tailed p value, which does not distinguish between significantly high and significantly low results.
+
+Serve aggiungere CT 0 nel dataframe
+```{r}
+filepath = "aneurismi_fumo - no sah - smoke - nosmoke - CYP2A6 14.csv"
+dat = read.csv(filepath)
+ctable <- table(dat)
+print(ctable)
+fisher.test(ctable, alternative="two.sided")
+```
+## Smoke + NOSAH vs No smoke + NOSAH
+## Allelic combinations
+```{r}
+filepath = "aneurismi_fumo - no sah - smoke - nosmoke - allelic-comb.csv"
+dat <- read.csv(filepath, header=TRUE, sep=",", row.names=1)
+fisher.test(dat, alternative="two.sided")
+```
+## Smoke + SAH vs No smoke + SAH
+## Allelic combinations
+```{r}
+filepath = "aneurismi_fumo - sah - smoke - nosmoke - allelic-comb.csv"
+dat <- read.csv(filepath, header=TRUE, sep=",", row.names=1)
+fisher.test(dat, alternative="two.sided")
+```
+## Bleeding and smoking in AA-AG-CC polymorphisms combination group
+```{r}
+filepath = "bleeding_smoking_in_AA-AG-CC.csv"
+dat <- read.csv(filepath, header=TRUE, sep=",", row.names=1)
+fisher.test(dat, alternative="two.sided")
 ```
